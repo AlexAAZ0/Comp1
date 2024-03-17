@@ -9,16 +9,16 @@ public class Main {
         Function secondFunction = new Func2();
 
 
-        Tuple<Double, Integer> tuple = newtonMethod.Method(-4, 0.001, firstFunction);
+        Tuple<Double, Integer> tuple = newtonMethod.FindAll(-4, -3, 0.001, firstFunction);
         System.out.println("Value: " + tuple.getX() + " Number of iterations: " + tuple.getY());
 
-        tuple = newtonMethod.Method(-2, 0.001, firstFunction);
+        tuple = newtonMethod.FindAll(-2, -1, 0.001, firstFunction);
         System.out.println("Value: " + tuple.getX() + " Number of iterations: " + tuple.getY());
 
-        tuple = newtonMethod.Method(1, 0.001, firstFunction);
+        tuple = newtonMethod.FindAll(0, 1,0.001, firstFunction);
         System.out.println("Value: " + tuple.getX() + " Number of iterations: " + tuple.getY());
 
-        tuple = newtonMethod.Method(4, 0.001, firstFunction);
+        tuple = newtonMethod.FindAll(4, 5,0.001, firstFunction);
         System.out.println("Value: " + tuple.getX() + " Number of iterations: " + tuple.getY());
 
 
