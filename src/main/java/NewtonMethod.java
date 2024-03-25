@@ -8,6 +8,7 @@ public class NewtonMethod {
 //        while (function.func(x0) * function.funcSecondDeriv(x0) < 0) {
 //            if (x0 >= 0) {x0 += e;}
 //            else {x0 -= e;}
+//
 //        }
 
         double xn = x0 - function.func(x0) / function.funcFirstDeriv(x0);
