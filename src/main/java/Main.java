@@ -1,6 +1,9 @@
-import Functions.Func1;
-import Functions.Func2;
-import Functions.Function;
+import LB1.Functions.Func1;
+import LB1.Functions.Func2;
+import LB1.Functions.Function;
+import LB1.NewtonMethod;
+import LB1.Tuple;
+import LB2.GaussMethod;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,5 +25,16 @@ public class Main {
         System.out.println("Value: " + tuple.getX() + " Number of iterations: " + tuple.getY());
 
 
+        System.out.println("-----------------------2--------------------");
+
+        double[][] A = {{5, 3, 1}, {3, 1.79999, 7}, {1, 8, 1}};
+        double[] B = {12, 13.4, 18};
+
+//        double[][] A = {{1, 2}, {4, 5}};
+//        double[] B = {3, 6};
+
+        GaussMethod gaussMethod = new GaussMethod();
+        gaussMethod.MethodWithout(A, B);
+        gaussMethod.Method(A, B);
     }
 }

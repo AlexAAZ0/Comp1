@@ -1,4 +1,4 @@
-package Functions;
+package LB1.Functions;
 
 public interface Function {
     public double func(double x);

@@ -1,3 +1,5 @@
+package LB1;
+
 import java.util.ArrayList;
 
 public class Tuple <X, Y>{

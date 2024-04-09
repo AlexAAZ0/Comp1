@@ -1,4 +1,4 @@
-package Functions;
+package LB1.Functions;
 
 public class Func2 implements Function {
     @Override
